@@ -1,5 +1,5 @@
 {
-  "name": "Introducao_BackEnd",
+  "name": "introducao_backend",
   "version": "1.0.0",
   "description": "Começa aqui o módulo de introdução ao Backend, ministrado por @rocketSeat",
   "main": "server.js",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Andersonkramin/introducaoBackEnd#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "nunjucks": "^3.2.3"
   }
 }

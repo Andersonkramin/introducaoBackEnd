@@ -102,6 +102,7 @@ header {
 
 .card {
     background-color: var(--color-blue);
+    display: grid;
 }
 
 .card__image-container img {
@@ -111,11 +112,13 @@ header {
 .card__content,
 .card__info {
     padding:24px;
+   
 }
 
 .card__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card__price {
@@ -165,5 +168,27 @@ iframe {
     top: 5%;
     width: 100%;
     height: 90%;
+    position: absolute;
+}
+
+
+/*  VIDEO PAGE */
+
+
+.video  {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.card__video-container {
+    position: relative;
+    padding-top: 70%;
+}
+
+
+.card__video-container iframe {
+    top: 0;
+    width: 100%;
+    height: 100%;
     position: absolute;
 }

@@ -1,0 +1,44 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+<title>Portifolio - Anderson Kramin</title>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+{% endblock %}
+
+{% block content %}
+
+<div id="wrapper">
+    <h1>Fotos - Imagens Praianas</h1>
+</div>
+
+<section class="cards">
+
+{% for item in items %}
+
+    <div class="card" id="{{item.id}}">
+        <div class="card__image-container">
+            <img  src= "{{item.url}}"
+                alt="{{item.title}}">
+        </div>
+
+        <div class="card__content">
+            <p> {{item.title}} </p>
+        </div>
+
+        <div class="card__info">
+            <p>{{item.name}}</p>
+            <p class="card__price">{{item.price}}</p>
+        </div>
+    </div>
+
+{% endfor %} 
+
+</section>
+
+<script src="/scripts.js"></script>
+
+{% endblock %}
